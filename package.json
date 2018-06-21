@@ -1,0 +1,37 @@
+{
+  "name": "koa-init",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "build": "pm2 start index.js --name game"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlyt/koa-init.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dlyt/koa-init/issues"
+  },
+  "homepage": "https://github.com/dlyt/koa-init#readme",
+  "dependencies": {
+    "@alicloud/sms-sdk": "^1.0.9",
+    "dxl-mysql": "^1.1.1",
+    "ejs": "^2.5.9",
+    "jsonwebtoken": "^8.2.2",
+    "koa": "^2.5.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-compress": "^3.0.0",
+    "koa-morgan": "^1.0.1",
+    "koa-router": "^7.4.0",
+    "koa-static": "^4.0.2",
+    "koa-views": "^6.1.4",
+    "koa2-cors": "^2.0.5",
+    "qiniu": "^7.1.7",
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2"
+  }
+}

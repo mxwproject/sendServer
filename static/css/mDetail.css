@@ -1,0 +1,59 @@
+.header {
+    height: 1.07rem;
+    width: 6.4rem;
+    background:url("../images/m_2qi_add_list_1.png") center center no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+.detail {
+    width: 6.4rem;
+    min-height: calc(100vh - 2.52rem);
+    min-height: -webkit-calc(100vh - 2.52rem);
+    padding-top: 0.4rem;
+    max-height: 22.59rem;
+    background: url("http://7xs09w.com1.z0.glb.clouddn.com/m_2qi_add_detail_1.png") center top no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+.detail h3 {
+    height: 0.6rem;
+    width: 100%;
+    font-size: 0.3rem;
+    line-height: 0.6rem;
+    text-align: center;
+    overflow: hidden;
+}
+.detail .source {
+    width: 3.8rem;
+    height: 0.24rem;
+    color: #999999;
+    font-size: 0.18rem;
+    line-height: 0.24rem;
+    margin:  0 auto;
+}
+
+.detail .detailContent {
+    padding: 0.5rem  0.35rem;
+    white-space: pre-wrap;
+}
+
+footer {
+    width: 6.4rem;
+    height: 1.05rem;
+    background-color: #3d4684;
+    position: relative;
+}
+
+footer div {
+    width: 6.4rem;
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.18rem;
+    line-height: 0.32rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

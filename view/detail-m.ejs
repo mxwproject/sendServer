@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>详情页</title>
+    <meta name="keywords" content="火王 破晓之战 手游 MMORPG 正版授权 年度人气幻想 新国风手游 时空万变 唯爱不爱 年度人气手游" />
+    <meta name="description" content="《火王：破晓之战》是一款有点特别的国风幻想游戏，在这里，我们拒绝千篇一律的写实仙侠美术风格，也不愿做简单的Q版换皮产品。传统的仙侠游戏在美术上，有着明显锯齿的人物建模和粗糙的场景设计，大大影响了游戏的整体美术品质，我们力求在《火王：破晓之战》中打造一个全新的幻想国风风格，古典审美已成为新的流行趋势，整体游戏界面以玉的效果为主体，抽象化的云月设计，希望在说明功能的同时给玩家以整体美感的享受，增加游戏整体的代入感。传统的玄幻游戏人物在剧情引导上，旁白平淡，玩家完全无法代入其中，大部分只会略过内容只求快进。当我们拿到火王的正版授权时，我们就知道，这是一个机会，我们策划使用解谜式的方式引导玩家去解开层层剧情，与NPC的全新互动也为了与一般的游戏有所区别。恐怕写再多也无法述说我们团队为此游戏花费的日与夜，好的作品总是在不断的争吵、无尽的打磨中产生，每一次的调整我们都抱着一点点期许，目前游戏的研发已经接近尾声，很快我们就会放出测试版，届时会邀请各位喜欢国风的玩家和《火王》漫画、电视剧的粉丝来测试和指正，为我们提点意见，或者跟我们聊聊，你的《火玩》世界。我们不怕批评的声音,有则改进,无则加勉。如果这款产品是龙，则徘徊于天；是凤，则翱翔于际。28岁的火王，将在烈火中重生。">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="/css/publicCss.css">
+    <link rel="stylesheet" href="/css/mDetail.css?random=<%= Math.random()*10000 %>">
+</head>
+<body>
+    <%  
+        function timestampToTime(timestamp){
+            var date = new Date(timestamp * 1000);
+            Y = date.getFullYear() + '/';
+            M = (date.getMonth()+1 < 10 ? '0'+(date.getMonth()+1) : date.getMonth()+1) + '/';
+            D = date.getDate() + ' ';
+            return Y+M+D;
+        }
+    %>
+    <section class="header"></section>
+    <section class="detail">
+        <h3><%= title %></h3>
+        <div class="source"><span class="author fl">作者：<%= author %></span><span class="dataTime fr">发表时间：<%= timestampToTime(createTime) %></span></div>
+        <div class="detailContent"><%-  content %></div>
+    </section>
+    <footer>
+        <div>
+            copyright2018  -  上海芒果互娱科技有限公司<br />
+            沪ICP备 14030342号
+        </div>
+    </footer>
+    <script src="/js/html5.js"></script>
+    <script src="/js/jquery-1.7.2.min.js"></script>
+    <script src="/js/public.js"></script>
+    <script src="/js/touchslider.js"></script>
+    <script src="/js/mDetail.js?random=<%= Math.random()*10000 %>"></script>
+</body>
+</html>

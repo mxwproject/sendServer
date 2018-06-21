@@ -1,0 +1,657 @@
+header {
+    width: 1000px;
+    height: 40px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+header .logo {
+    width: 128px;
+    height: 100%;
+    background: url("../images/logo.png") center center no-repeat;
+}
+
+header  .loginCont {
+    width: 220px;
+    height: 100%;
+    margin-right: 100px;
+    font-size: 12px;
+    line-height: 40px;
+}
+
+header  .loginBtn ,header  .registeredBtn ,header  .tableBtn{
+    cursor: pointer;
+    margin: 10px;
+}
+.main {
+    width: 100%;
+    min-height: calc(100vh - 192px);
+    background:url("http://7xs09w.com1.z0.glb.clouddn.com/p_2qi_add_list_2.png") center center no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.main .content {
+    width: 1200px;
+    height: 1040px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main .content .logo {
+    width: 141px;
+    height: 95px;
+    background: url("http://7xs09w.com1.z0.glb.clouddn.com/p_2qi_add_list_1.png") center center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: -215px;
+    top: 32px;
+}
+
+.content .leftBox {
+    width: 254px;
+    height: 1038px;
+    background: url("http://7xs09w.com1.z0.glb.clouddn.com/p_2qi_add_list_3.png") center center no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+.content .leftBox .attention {
+    width: 164px;
+    min-height: 291px;
+    position: absolute;
+    top: 56px;
+    left: 44px;
+}
+
+.content .leftBox .attention .erweima {
+    width: 164px;
+    height: 180px;
+    background: url("http://7xs09w.com1.z0.glb.clouddn.com/p_2qi_add_list_4.png") center center no-repeat;
+    background-size: 100%;
+    margin-bottom: 8px;
+}
+
+.content .leftBox .yuyue .ad1YuyueBtn {
+    width: 164px;
+    height: 47px;
+    background: url("http://7xs09w.com1.z0.glb.clouddn.com/p_2qi_add_list_5.png") center center no-repeat;
+    background-size: auto 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.content .leftBox .yuyue .ad1YuyueBtn:hover,
+.content .leftBox .yuyue .ad1YaoqingBtn:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+}
+
+.content .leftBox .yuyue .ad1YaoqingBtn {
+    width: 164px;
+    height: 47px;
+    background: url("http://7xs09w.com1.z0.glb.clouddn.com/p_2qi_add_list_6.png") center center no-repeat;
+    background-size: auto 100%;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.content .leftBox .attention2 {
+    width: 164px;
+    height: 207px;
+    position: absolute;
+    top: 500px;
+    left: 44px;
+}
+
+.content .leftBox .attention2  .title {
+    display: flex;
+    width: 100%;
+    height: 43px;
+}
+
+.content .leftBox .attention2  .title .QQ {
+    flex: 1;
+    background: url("../images/p_2qi_add_list_7qq.png") center center no-repeat;
+    background-size: 22px;
+    cursor: pointer;
+}
+
+.content .leftBox .attention2  .title .weibo {
+    flex: 1;
+    background: url("../images/p_2qi_add_list_8weibo.png") center center no-repeat;
+    background-size: 28px;
+    cursor: pointer;
+}
+.content .leftBox .attention2  .title .QQ.on , .content .leftBox .attention2  .title .weibo.on {
+    background-color: #fff;
+}
+
+
+.content .leftBox .attention2  .title .text {
+    flex: 2;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.content .leftBox .attention2 .attention2Erweima {
+    width: 164px;
+    height: 152px;
+    background-color: #fff;
+    position: relative;
+    padding-top: 12px; 
+}
+
+.content .leftBox .attention2 .attention2Erweima .attention2ErweimaQQ {
+    width: 139px;
+    height: 139px;
+    background: url("http://7xs09w.com1.z0.glb.clouddn.com/p_2qi_add_list_9.png") center center no-repeat;
+    margin: 0 auto;
+    display: none;
+}
+
+.content .leftBox .attention2 .attention2Erweima .attention2ErweimaWeibo {
+    width: 139px;
+    height: 139px;
+    background: url("http://7xs09w.com1.z0.glb.clouddn.com/p_2qi_add_list_9.png") center center no-repeat;
+    margin: 0 auto;
+    display: none;
+}
+
+.content .leftBox .attention2 .attention2Erweima .attention2ErweimaQQ.on ,.content .leftBox .attention2 .attention2Erweima .attention2ErweimaWeibo.on {
+    display: block;
+}
+
+.rightBox {
+    width: 851px;
+    height: 986px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 54px 39px 0;
+    overflow: hidden;
+}
+
+.rightBox  .title {
+    height: 94px;
+    width: 100%;
+    line-height: 94px;
+    border-bottom: 2px solid #999999;
+    margin-bottom: 15px;
+}
+
+.rightBox  .title h3 {
+    color: #5b5a5a;
+    font-size: 30px;
+}
+.rightBox  .title .bread a {
+    color: #5b5a5a;
+    font-size: 16px;
+}
+
+.rightBox  .title .bread .on {
+    color: #cfbc84;
+}
+
+.rightBox .titleList {
+    border-bottom: 1px solid  #e5e5e5;
+}
+
+.rightBox .titleList li{
+    width: 175px;
+    height: 76px;
+    color: #5b5a5a;
+    text-align: center;
+    font-size: 22px;
+    line-height: 79px;
+    cursor: pointer;
+}
+
+.rightBox .titleList li.on {
+    color: #ccb56c;
+    background: url("../images/p_2qi_add_list_10.png") center center no-repeat;
+    background-size: 125px;
+}
+
+.rightBox .itemList {
+    max-height: 673px;
+    overflow: hidden;
+}
+
+.rightBox .itemList li{
+    height: 60px;
+    padding-left: 35px;
+    font-size: 14px;
+    line-height: 60px;
+    border-bottom: 1px dashed #999999;
+    position: relative;
+}
+
+.rightBox .itemList li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.rightBox .itemList li::before {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 60px;
+    background: url("../images/p_2qi_add_list_11.png") center right no-repeat;
+    background-size: 9px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.rightBox .itemList li  .leftTip {
+    margin: 0 20px;
+}
+.rightBox .itemList li  .dataTime {
+    margin-right: 25px;
+}
+
+/* #PagesBar {
+    margin: 50px auto 0;
+} */
+
+.pages_wr {
+    margin-top: 50px;
+    height: 44px;
+}
+
+.pages_wr .page {
+    height: 60px;
+    font-size: 14px;
+    line-height: 44px;
+    margin:0 auto;
+    color: #999;
+    text-align: center;
+}
+.pages_wr .page #pagePrev{
+    width: 110px;
+    height: 44px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.pages_wr .page #pagePrev.des{
+    color: #666666;
+    background-color: #fff;
+}
+
+.pages_wr .page #pagePrev:hover{
+    color: #ccb56c;
+}
+.pages_wr .page #pagePrev a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.pages_wr .page #pagePrev a:hover {
+    color: #ccb56c;
+}
+
+.pages_wr .page #pageNext{
+    width: 110px;
+    height: 44px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    border-radius: 4px;
+    margin-right: 20px;
+    background-color: #fff;
+}
+
+.pages_wr .page #pageNext:hover{
+    color: #ccb56c;
+}
+
+.pages_wr .page #pageNext a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.pages_wr .page #pageNext a:hover {
+    color: #ccb56c;
+}
+
+.pages_wr .page #pageNum{
+    height: 44px;
+    line-height: 22px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.pages_wr .page #pageNum a{
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 42px;
+    border: 1px solid #D7D7D7;
+    border-radius: 4px;
+    margin: 0px 10px;
+    text-decoration: none;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+.pages_wr .page #pageNum a:hover{
+    background: #ccb56c;
+    border: 1px solid #ccb56c;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 44px;
+}
+.pages_wr .page #pageNum .cur {
+    background: #ccb56c;
+    border: 1px solid #ccb56c;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 44px;
+}
+
+/* 详情页 样式 */
+.contentInfo h3{
+    height: 70px;
+    font-size: 22px;
+    line-height: 70px;
+    text-align: center;
+    color: #5d5d5d;
+}
+
+.contentInfo  .author {
+    padding: 0 200px;
+    color: #999;
+    font-size: 14px;
+    line-height: 20px;
+    border-bottom: 1px  solid #999999;
+    margin-bottom: 10px;
+}
+
+.contentInfo  .detailContent {
+    font-size: 16px;
+    line-height: 40px;
+    padding: 10px 20px;
+    white-space: pre-wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 邀请弹窗 */
+.yanqingTan {
+    width: 750px;
+    height: 460px;
+    background: url("http://7xs09w.com1.z0.glb.clouddn.com/pic.png") center center no-repeat;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -230px;
+    margin-left: -375px;
+    z-index: 1000;
+    display: none;
+    transition: all ;
+}
+
+.yanqingTanClose {
+    width: 42px;
+    height: 42px;
+    background: url("../images/u.png") center center no-repeat;
+    position: absolute;
+    right: -50px;
+    top: 0;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.yanqingTanClose:hover {
+    transform: rotate(180deg);
+}
+
+/* 预约弹层 */
+.moduleTan {
+    width: 751px;
+    height: 460px;
+    background: url("http://7xs09w.com1.z0.glb.clouddn.com/g1_p_yuYueTan.png") center center no-repeat;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -230px;
+    margin-left: -375px;
+    z-index: 1000;
+    display: none;
+    transition: all ;
+}
+
+
+
+.moduleTan.active {
+    animation: moduleTan 0.3s ease-in;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes moduleTan {
+    0%{
+        transform: scale(0.3);
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+
+.moduleTan .moduleTanContent {
+    width: 360px;
+    height: auto;
+    margin: 105px auto 0;
+}
+
+.moduleTan .moduleTanContent .selePhone {
+    margin-bottom:  34px;
+}
+
+.moduleTan .moduleTanContent .selePhone li {
+    width: 180px;
+    height: 60px;
+    float: left;
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+}
+
+.moduleTan .moduleTanContent .selePhone li.active {
+    color: #ccb56c;
+    border-bottom: 2px solid #ccb56c;
+}
+
+.moduleTan .moduleTanContent .selePhone li.active::after {
+    content: "";
+    display: block;
+    width:0;
+    height:0;
+    border:10px solid; 
+    border-color:#ccb56c transparent transparent transparent;
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+}
+
+.moduleTan .moduleTanContent  .phone {
+    width: 360px;
+    height: 45px;
+    font-size: 16px;
+    text-indent: 2em;
+    line-height: 45px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 14px;
+}
+
+.moduleTan .moduleTanContent .verification {
+    margin-bottom: 41px;
+}
+
+.moduleTan .moduleTanContent .code {
+    width: 225px;
+    height: 45px;
+    font-size: 16px;
+    text-indent: 2em;
+    line-height: 45px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.moduleTan .moduleTanContent .verificationCode {
+    width: 131px;
+    height: 45px;
+    font-size: 16px;
+    text-indent: 2em;
+    line-height: 45px;
+    background-color: #ccb56c;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.moduleTan .moduleTanContent .verificationCode.prohibited {
+    background-color: #999999;
+    cursor: no-drop;
+}
+
+.moduleTan .moduleTanContent .sumbitBtn {
+    width: 272px;
+    height: 57px;
+    background: url("../images/sumbit.png") center center no-repeat;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.moduleTan .moduleTanContent .sumbitBtn.active {
+    opacity: 0.5;
+}
+
+.moduleTan  .closeBtn {
+    width: 42px;
+    height: 41px;
+    background: url("../images/colse.png") center center no-repeat;
+    position: absolute;
+    top: 0px;
+    right: -47px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.moduleTan  .closeBtn:hover {
+    transform: rotate(180deg);
+}
+
+
+/* 预约成功弹层 */
+.moduleTanSecc {
+    width: 553px;
+    height: 258px;
+    background: url("http://7xs09w.com1.z0.glb.clouddn.com/yuyue_secc.png") center center no-repeat;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -129px;
+    margin-left: -277px;
+    z-index: 1000;
+    display: none;
+}
+
+.moduleTanSecc  .closeBtn2 {
+    width: 42px;
+    height: 41px;
+    background: url("../images/colse.png") center center no-repeat;
+    position: absolute;
+    top: 0px;
+    right: -47px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.moduleTanSecc  .jihuoma {
+    width: 100%;
+    color: #ccb56c;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    margin: 172px auto 0;
+}
+
+.moduleTanSecc  .closeBtn2:hover {
+    transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 页脚 */
+footer {
+    width: 100%;
+    height: 152px;
+    background-color: #fff;
+}
+
+.footer-inner {
+    width: 1000px;
+    margin:  0 auto;
+    position: relative;
+}
+
+footer  .logo {
+    display: block;
+    width: 218px;
+    height: 73px;
+    position: absolute;
+    top: 35px;
+    left: 176px;
+}
+
+footer  .footer-content {
+    width: 500px;
+    height: 73px;
+    color: #999999;
+    font-size: 12px;
+    line-height: 18px;
+    padding-left:20px;
+    border-left: 2px solid #666666;
+    position: absolute;
+    left: 422px;
+    top: 35px;
+}

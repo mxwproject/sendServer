@@ -1,0 +1,703 @@
+html {
+    font-size: 50px;
+}
+
+.fixedTop {
+    height: 0.68rem;
+    width: 6.4rem;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    z-index: 99;
+}
+
+.fixedTop .logo {
+    display: block;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: #818181;
+    border: 2px solid #ffffff;
+    border-radius: 0.1rem;
+    position: absolute;
+    top: 0.14rem;
+    left: 0.36rem;
+}
+
+.fixedTop h3 {
+    width: 1.8rem;
+    height: 0.18rem;
+    font-size: 0.18rem;
+    line-height: 0.18rem;
+    color: #e2c56d;
+    position: absolute;
+    top: 0.14rem;
+    left: 1.3rem;
+}
+
+.fixedTop h4 {
+    width: 1.8rem;
+    height: 0.14rem;
+    color: #c4c4c4;
+    font-size: 0.14rem;
+    line-height: 0.14rem;
+    position: absolute;
+    left: 1.3rem;
+    top: 0.4rem;
+}
+
+.fixedTop .yuyue {
+    width: 1.32rem;
+    height: 0.45rem;
+    background: url("../images/m_top_yuyue.png") center center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0.12rem;
+    right: 0.3rem;
+}
+
+
+.ad1 {
+    width: 6.4rem;
+    height: 8.73rem;
+    background: url("http://7xs09w.com1.z0.glb.clouddn.com/head_m.jpg") center center no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+.ad1 .ad1Video {
+    width: 0.79rem;
+    height: 0.79rem;
+    position: absolute;
+    top: 5.55rem;
+    left: 0.92rem;
+}
+
+.ad1 .ad1Video .ad1VideoImg {
+    width: 100%;
+    height: 100%;
+    background: url("../images/m_ad1_quan.png") center center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -moz-animation: ad1VideoImg 1.5s linear infinite;
+    -webkit-animation: ad1VideoImg 1.5s linear infinite;
+    -o-animation: ad1VideoImg 1.5s linear infinite;
+    -ms-animation: ad1VideoImg 1.5s linear infinite;
+    animation: ad1VideoImg 1.5s linear infinite;
+}
+
+@keyframes ad1VideoImg{
+    0% {
+        transform: rotate(0)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+@-webkit-keyframes ad1VideoImg{
+    0% {
+        -webkit-transform: rotate(0)
+    }
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+.ad1 .ad1Video .ad1VideoIcon {
+    width: 100%;
+    height: 100%;
+    background: url("../images/m_ad1_video.png") center center no-repeat;
+    background-size: auto 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.ad1  .ad1Yuyue {
+    width: 2.54rem;
+    height: 0.56rem;
+    background: url("../images/m_ad1_yuyue.png") center center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 6.79rem;
+    left: 0.3rem;
+}
+
+.ad1  .ad1Yaqing {
+    width: 2.54rem;
+    height: 0.56rem;
+    background: url("../images/m_ad1_yaoqing.png") center center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 7.46rem;
+    left: 0.3rem;
+}
+
+.ad1   .ad1YuyueNum {
+    width: 2.54rem;
+    height: 0.4rem;
+    font-size: 0.22rem;
+    line-height: 0.4rem;
+    text-align: center;
+    position: absolute;
+    top: 8.14rem;
+    left: 0.3rem;
+}
+
+.ad1YuyueNumColor1 {
+    color: #bea968;
+}
+
+.ad1YuyueNumColor2 {
+    color: #51598e;
+}
+
+/* 二期新增 */
+
+.add_ad1_2 {
+    width: 6.4rem;
+    height:9.33rem;
+    background: url("http://7xs09w.com1.z0.glb.clouddn.com/m_2qi_xiugai_3.png") center center no-repeat;
+    background-size: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.add_ad1_2 #slideshow1_2 {
+    width: 5.92rem;
+    height: 3.35rem;
+    position: absolute;
+    left: 0.24rem;
+    top: 1.32rem;
+}
+#slideshow1_2 .bd {
+    width: 5.92rem;
+    height: 3.35rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 9;
+}
+
+#slideshow1_2 .bd li{
+    width: 5.92rem;
+    height: 3.35rem;
+}
+
+#slideshow1_2 .bd li img {
+    width: 100%;
+    height: 100%;
+}
+
+#slideshow1_2 .hd {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 50%;
+    z-index: 19;
+    transform: translateX(-50%);
+}
+
+#slideshow1_2 .hd li{
+    float: left;
+    width: 0.21rem;
+    height: 0.21rem;
+    background: url("../images/m_2qi_xiugai_6.png") center center no-repeat;
+    background-size: 100%;
+    text-indent: 999em;
+    margin: 0 0.1rem;
+}
+
+#slideshow1_2 .hd li.on {
+    background: url("../images/m_2qi_xiugai_5.png") center center no-repeat;
+    background-size: 100%;
+}
+
+
+.add_ad1_2  .list {
+    width: 5.8rem;
+    height: 3.35rem;
+    position: absolute;
+    top: 4.8rem;
+    left: 0.32rem;
+    overflow: hidden;
+}
+
+.add_ad1_2  .list li {
+    height: 0.83rem;
+    width: 100%;
+    border-bottom: 1px dashed #999999;
+}
+
+.add_ad1_2  .list li {
+    height: 0.83rem;
+    width: 100%;
+    font-size: 0.2rem;
+    line-height: 0.83rem;
+    border-bottom: 1px dashed #999999;
+    overflow: hidden;
+}
+
+.add_ad1_2  .list li a {
+    display: block;
+    widows: 100%;
+    height: 100%;
+    color: #000000;
+}
+
+.add_ad1_2 .listBtn {
+    width: 5.8rem;
+    height: 0.95rem;
+    background: url("http://7xs09w.com1.z0.glb.clouddn.com/m_2qi_xiugai_4.png") center center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 8.3rem;
+    left: 0.32rem;
+}
+.add_ad1_2 .listBtn  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.ad2 {
+    width: 6.4rem;
+    height: 5.3rem;
+    /* background: url("http://7xs09w.com1.z0.glb.clouddn.com/g_m_ad2_bg_2.png") center center no-repeat; */
+    background: url("http://7xs09w.com1.z0.glb.clouddn.com/m_2qi_xiugai_1.png") center center no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+.ad2 .ad2Btn {
+    width: 0.21rem;
+    height: 0.52rem;
+    background: url("../images/dacheng.png") center center no-repeat;
+    background-size: 100%;
+    position: absolute;
+}
+
+.ad2 .ad2Btn1 {
+}
+
+.ad2 .ad2Btn2 {
+    left: 3.66rem;
+    top: 1.45rem;
+}
+
+.ad2 .ad2Btn3 {
+}
+
+.ad2 .ad2Btn4 {
+}
+.ad2 .ad2Btn5 {
+}
+.ad2 .ad2Btn6 {
+}
+
+/* 预约成功弹层 */
+.moduleTanSecc {
+    width: 3.42rem;
+    height: 1.60rem;
+    background: url("../images/m_sec.jpg") center center no-repeat;
+    background-size: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -0.8rem;
+    margin-left: -1.71rem;
+    z-index: 1000;
+    display: none;
+}
+
+.moduleTanSecc  .closeBtn2 {
+    width: 0.42rem;
+    height: 0.41rem;
+    background: url("../images/colse.png") center center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0px;
+    right: -0.47rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.moduleTanSecc  .jihuoma {
+    width: 100%;
+    color: #ccb56c;
+    font-size: 0.14rem;
+    line-height: 0.18rem;
+    text-align: center;
+    margin: 1.1rem auto 0;
+}
+
+
+.ad3 {
+    width: 6.4rem;
+    height: 14.7rem;
+    /* background: url("http://7xs09w.com1.z0.glb.clouddn.com/g1_m_ad3_bg_3.png") center center no-repeat; */
+    background: url("http://7xs09w.com1.z0.glb.clouddn.com/m_2qi_xiugai_2.png") center center no-repeat;
+    background-size: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.ad3 #slideshow1 {
+    width: 5.48rem;
+    height: 3.01rem;
+    position: absolute;
+    left: 0.46rem;
+    top: 1.08rem;
+}
+#slideshow1 .bd {
+    width: 5.48rem;
+    height: 3.01rem;
+    overflow: hidden;
+}
+
+#slideshow1 .bd li{
+    width: 5.48rem;
+    height: 3.01rem;
+}
+
+#slideshow1 .bd li img {
+    width: 100%;
+    height: 100%;
+}
+
+#slideshow1 .hd {
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    z-index: 9;
+    transform: translateX(-50%);
+}
+
+#slideshow1 .hd li{
+    float: left;
+    width: 0.17rem;
+    height: 0.17rem;
+    background: url("../images/m_ad3_btn1.png") center center no-repeat;
+    background-size: 100%;
+    text-indent: 999em;
+    margin: 0 0.1rem;
+}
+
+#slideshow1 .hd li.on {
+    background: url("../images/m_ad3_btn2.png") center center no-repeat;
+    background-size: 100%;
+}
+
+.ad3 .ad3Yuyue {
+    width: 2.54rem;
+    height: 0.56rem;
+    background: url("../images/m_ad3_yuyue.png") center center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 11.04rem;
+    left: 1.93rem;
+}
+
+.ad3 .ad3Yaoqing {
+    width: 2.54rem;
+    height: 0.56rem;
+    background: url("../images/m_ad3_yaoqing_2.png") center center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 11.71rem;
+    left: 1.93rem;
+}
+
+.ad3 .ad3logo {
+    width: 2.54rem;
+    height: 2rem;
+    background: url("../images/m_logo.png") center center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 11.71rem;
+    left: 1.93rem;
+}
+
+.fenxiang {
+    width: 5.59rem;
+    height: 4.3rem;
+    position: absolute;
+    top: 6.24rem;
+    left: 0.39rem;
+}
+
+/*.ad3 .ad3Share {
+    width: 5.56rem;
+    height: 0.55rem;
+    color: #3d4684;
+    font-size: 0.22rem;
+    line-height: 0.55rem;
+    text-align: center;
+    border-bottom: 1px solid #3d4684;
+    position: absolute;
+    top: 8.64rem;
+    left: 0.38rem;
+}*/
+
+
+.fenxiang1 {
+    width: 2.64rem;
+    height: 2.08rem;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+.fenxiang1 img {
+    display: block;
+    width: 100%;
+}
+
+.fenxiang2 {
+    width: 2.64rem;
+    height: 2.08rem;
+    position: absolute;
+    top:0;
+    right: 0; 
+}
+
+.fenxiang2 img {
+    display: block;
+    width: 100%;
+}
+
+.fenxiang3 {
+    width: 2.64rem;
+    height: 2.08rem;
+    background: url("http://7xs09w.com1.z0.glb.clouddn.com/m_fenxiang_3.png") center center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+}
+
+.shareWeibo {
+    width: 2.64rem;
+    height: 2.08rem;
+    background: url("http://7xs09w.com1.z0.glb.clouddn.com/m_fenxiang_4.png") center center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.shareWeibo a {
+    width: 100%;
+    height: 100%;
+}
+
+
+.sharePengyou {
+    width: 3.73rem;
+    height: 1.5rem;
+    background: url(../images/zhiying.png) center center no-repeat;
+    background-size: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1010;
+    display: none;
+}
+
+footer {
+    width: 6.4rem;
+    height: 1.05rem;
+    background-color: #3d4684;
+    position: relative;
+}
+
+footer div {
+    width: 6.4rem;
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.18rem;
+    line-height: 0.32rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 预约弹层 */
+.moduleTan {
+    width: 5.5rem;
+    height: 3.36rem;
+    background: url("http://7xs09w.com1.z0.glb.clouddn.com/g1__m_tan_bg.png") center center no-repeat;
+    background-size: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -1.68rem;
+    margin-left: -2.75rem;
+    z-index: 1000;
+    display: none;
+    transition: all ;
+}
+
+.moduleTan.active {
+    animation: moduleTan 0.3s ease-in;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes moduleTan {
+    0%{
+        transform: scale(0.3);
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+
+.moduleTan .moduleTanContent {
+    width: 3.6rem;
+    height: auto;
+    margin: 0.7rem auto 0;
+}
+
+.moduleTan .moduleTanContent .selePhone {
+    margin-bottom:  0.24rem;
+}
+
+.moduleTan .moduleTanContent .selePhone li {
+    width: 1.8rem;
+    height: 0.41rem;
+    float: left;
+    color: #ffffff;
+    font-size: 0.14rem;
+    line-height: 0.41rem;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+}
+
+.moduleTan .moduleTanContent .selePhone li.active {
+    color: #ccb56c;
+    border-bottom: 2px solid #ccb56c;
+}
+
+.moduleTan .moduleTanContent .selePhone li.active::after {
+    content: "";
+    display: block;
+    width:0;
+    height:0;
+    border:10px solid; 
+    border-color:#ccb56c transparent transparent transparent;
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+}
+
+.moduleTan .moduleTanContent  .phone {
+    width: 3.6rem;
+    height: 0.5rem;
+    font-size: 0.25rem;
+    text-indent: 1em;
+    line-height: 0.5rem;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 0.1rem;
+}
+
+.moduleTan .moduleTanContent .verification {
+    margin-bottom: 0.2rem;
+}
+.moduleTan .moduleTanContent .code {
+    width: 2.2rem;
+    height: 0.5rem;
+    font-size: 0.25rem;
+    text-indent: 1em;
+    line-height: 0.5rem;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.moduleTan .moduleTanContent .verificationCode {
+    width: 1.2rem;
+    height: 0.5rem;
+    font-size: 0.21rem;
+    text-align: center;
+    line-height: 0.5rem;
+    background-color: #ccb56c;
+    border-radius: 5px;
+}
+
+.moduleTan .moduleTanContent .verificationCode.prohibited {
+    background-color: #999999;
+    cursor: no-drop;
+}
+
+.moduleTan .moduleTanContent .sumbitBtn {
+    width: 2.01rem;
+    height: 0.42rem;
+    background: url("../images/m_tan_yuyue.png") center center no-repeat;
+    background-size: 100%;
+    margin: 0 auto;
+}
+
+.moduleTan .moduleTanContent .sumbitBtn.active {
+    opacity: 0.5;
+}
+
+.moduleTanText {
+    height: 0.3rem;
+    font-size: 0.14rem;
+    line-height: 0.3rem;
+    color: #bea968;
+    text-align: center;
+}
+
+/* 视频弹层 */
+.video-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 10001;
+    display: none;
+    width: 5.6rem;
+    height: 4rem;
+    margin: -2rem 0 0 -2.8rem;
+}
+
+.video-container .video-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5.6rem;
+    height: 4rem;
+}
+
+.video-container .video-close-btn {
+    position: absolute;
+    top: 0;
+    right: -0.44rem;
+    display: block;
+    width: 0.44rem;
+    height: 0.44rem;
+    background: url(../images/close_57026c8.png) center center no-repeat;
+    background-size: 100% auto;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.video-container .video-close-btn:hover {
+    transform: rotate(180deg);
+}
+
+.video-container .video-box video {
+    width: 100%;
+    height: 100%;
+}
