@@ -58,10 +58,11 @@ LogisticCtrl.list = async (ctx) => {
 LogisticCtrl.detail = async (ctx) => {
     try {
         const { id } = ctx.params;
-        const news = await News.findOne({
+        const logistic = await Logistic.findOne({
             where: { id: id }
         });
-        return ctx.render('detail', news);
+        ctx.body.code = 1;
+        ctx.body.data = logistic;
     } catch (err) {
         console.error(err);
         return ctx.body.msg = '服务器异常';
