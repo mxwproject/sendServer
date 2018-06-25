@@ -3,7 +3,7 @@
 const expire = '15 days';
 const crypto = require('crypto');
 const jwt = require('jsonwebtoken');
-const { User } = require('../models');
+const { User, Admin } = require('../models');
 const config = require('../../config');
 
 const LoginCtrl = module.exports = {};
@@ -15,7 +15,7 @@ LoginCtrl.index = async (ctx) => {
         if (!account || !password) {
             return ctx.body.msg = '参数错误';
         }
-        const user = await User.findOne({
+        const user = await Admin.findOne({
             where: { account: account }
         });
         if (!Object.keys(user).length) {
@@ -37,6 +37,40 @@ LoginCtrl.index = async (ctx) => {
     } catch (err) {
         console.error(err);
         return ctx.body.msg = '服务器异常';
+    };
+}
+
+LoginCtrl.wechat = async (ctx) => {
+    try {
+        const { code } = ctx.request.body;
+        if (!code) {
+            return ctx.body.msg = '缺少参数';
+        }
+        const body = await Wechat.auth(code);
+        // const body = { 
+        //     session_key: 'xcZYJrqweM8t9jqPplkXHg==',
+        //     openid: 'owp1J5GeSqhNUjyP4ce0svGtLm-g' 
+        // };
+        if (body.errcode) {
+            return ctx.body.msg = '无效的code';
+        }
+        const { openid } = body;
+        const user = await User.findOne({
+            where: { openid: openid }
+        });
+        if (!Object.keys(user).length) {
+            await User.save({
+                openid: openid,
+                createTime: Math.round(new Date().getTime() / 1000)
+            });
+        }
+        const token = jwt.sign(body, config.token.secret, { expiresIn: expire });
+        ctx.body.code = 1;
+        ctx.body.data = {
+            token: token
+        };
+    } catch (err) {
+        console.error(err);
     };
 }
 

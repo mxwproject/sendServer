@@ -6,7 +6,7 @@ const LogisticCtrl = module.exports = {};
 
 LogisticCtrl.create = async (ctx) => {
     try {
-        const { departure, focus, tunnage, unitPrice, mobile, remark } = ctx.request.body;
+        const { departure, focus, tunnage, unitPrice, mobile, remark, content } = ctx.request.body;
         await Logistic.save({
             departure: departure || '',
             focus: focus || '',
@@ -15,6 +15,7 @@ LogisticCtrl.create = async (ctx) => {
             mobile: mobile || '',
             remark: remark || '',
             status: 1,
+            content: content || '',
             createTime: Math.round(new Date().getTime() / 1000)
         });
         ctx.body.code = 1;
@@ -72,7 +73,7 @@ LogisticCtrl.detail = async (ctx) => {
 LogisticCtrl.update = async (ctx) => {
     try {
         const { id } = ctx.params;
-        const { departure, focus, tunnage, unitPrice, mobile, remark } = ctx.request.body;
+        const { departure, focus, tunnage, unitPrice, mobile, remark, content } = ctx.request.body;
         await Logistic.update({
             where: { id: id },
             set: {
@@ -82,6 +83,7 @@ LogisticCtrl.update = async (ctx) => {
                 unitPrice: unitPrice || 0,
                 mobile: mobile || '',
                 remark: remark || '',
+                content: content || '',
                 status: 2,
             }
         });
