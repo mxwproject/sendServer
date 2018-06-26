@@ -14,8 +14,8 @@ Token.decode = async (ctx, next) => {
         }
         console.log(authorization)  // todo
         const decoded = await jwt.verify(authorization, config.token.secret);
-        const user = await User.findOne({
-            where: { id: decoded.id }
+        let user = await User.findOne({
+            where: { openid: decoded.openid }
         });
         if (!Object.keys(user)) {
             return ctx.body.msg = '该用户不存在';
@@ -33,7 +33,6 @@ Token.getUserInfo = async (ctx, next) => {
         if (authorization) {
             const decoded = await jwt.verify(authorization, config.token.secret);
             const user = await User.findOne({
-                columns: ['id', 'is_effect', 'openid'],
                 where: { openid: decoded.openid }
             });
             ctx.user = user;

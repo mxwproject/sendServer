@@ -8,6 +8,7 @@ module.exports = {
     // Subscribe: new Model(gameDb, 'sms_subscribe'),
     // Member: new Model(gameDb, 'member'),
     // Wx: new Model(gameDb, 'wx'),    
+    Wechat: require('./wechat'),
     User: new Model(sendDb, 'send_user'),    
     Admin: new Model(sendDb, 'send_admin'),    
     Logistic: new Model(sendDb, 'send_logistic'),    

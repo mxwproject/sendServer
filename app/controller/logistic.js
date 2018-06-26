@@ -16,6 +16,7 @@ LogisticCtrl.create = async (ctx) => {
             remark: remark || '',
             status: 1,
             content: content || '',
+            uid: ctx.user.id || 0,
             createTime: Math.round(new Date().getTime() / 1000)
         });
         ctx.body.code = 1;
@@ -61,6 +62,19 @@ LogisticCtrl.detail = async (ctx) => {
         const { id } = ctx.params;
         const logistic = await Logistic.findOne({
             where: { id: id }
+        });
+        ctx.body.code = 1;
+        ctx.body.data = logistic;
+    } catch (err) {
+        console.error(err);
+        return ctx.body.msg = '服务器异常';
+    };
+}
+
+LogisticCtrl.detailByUser = async (ctx) => {
+    try {
+        const logistic = await Logistic.findOne({
+            where: { uid: ctx.user.id }
         });
         ctx.body.code = 1;
         ctx.body.data = logistic;

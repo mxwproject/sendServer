@@ -3,7 +3,7 @@
 const expire = '15 days';
 const crypto = require('crypto');
 const jwt = require('jsonwebtoken');
-const { User, Admin } = require('../models');
+const { Wechat, Admin, User } = require('../models');
 const config = require('../../config');
 
 const LoginCtrl = module.exports = {};
